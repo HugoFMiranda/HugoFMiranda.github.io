@@ -43,6 +43,12 @@ p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.container__text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 .container__page {
     display: flex;
     flex-direction: column;
@@ -183,4 +189,20 @@ p {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+    p {
+        font-size: 1.1rem;
+        margin-bottom: 0;
+    }
+    .container__content {
+        padding-top: 0;
+    }
+    .container__pessoas {
+        margin-left: 0;
+    }
 }
